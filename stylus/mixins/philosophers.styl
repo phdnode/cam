@@ -1,0 +1,64 @@
+.philosophers
+    right: 0
+    bottom: 0
+    z-index: 9
+    position: fixed
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    border-style: solid 1px gray
+    width: 100px
+    margin: 5px
+
+button:hover
+    background-color: lightGray
+    box-shadow: $md-card-4
+
+.tooltip .tooltiptext
+    top: 35px
+    right: 70%
+    background-color: transparent
+
+.tooltip
+    position: relative
+    display: inline-block
+    background-color: transparent
+
+.tooltip .tooltiptext
+    visibility: hidden
+    width: 120px
+    background-color: transparent
+    color: black
+    text-align: center
+    padding: 5px 0
+    position: absolute
+    z-index: 10
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext
+    visibility: visible
+    background-color: transparent
+    text-shadow: $md-card-1
+
+button:focus
+    outline:0
+
+button
+    font-size: 15px
+    color: gray
+    border-style: none;
+    cursor: pointer
+    border-radius: 50%
+    width: 75px
+    height: 75px
+    margin: 10px
+    text-align: center
+    background-color: transparent
+
+.philimg
+    max-width:100%
+    max-height:100%
+    vertical-align: middle
+    border-radius: 50%
+    box-shadow: $md-card-2

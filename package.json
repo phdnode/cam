@@ -1,0 +1,36 @@
+{
+  "name": "descartes",
+  "config" : { "port" : "8080" },
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "activity-router": "^1.3.1",
+    "dion": "^1.0.2",
+    "fastn": "^2.7.2",
+    "sea-lion": "^1.0.5",
+    "fastclick": "^1.0.6",
+    "modal-component": "^1.1.0"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "debug": "^2.2.0",
+    "minifyify": "^7.3.3",
+    "nib": "^1.1.0",
+    "rootify": "^1.1.0",
+    "stylus": "^0.54.2",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1",
+    "uglifyify": "^3.0.1",
+    "watchify": "^3.7.0",
+    "onchange": "^2.5.0",
+    "nodemon": "^1.10.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node_modules/.bin/watchify scripts/index.js -o ./app/index.browser.js -d -v & node_modules/.bin/nodemon --debug --watch app ./server/index.js & stylus -u nib -w stylus/index.styl -o ./app/styles/index.css",
+    "start": "node ./server"
+  },
+  "author": "Sholto Maud",
+  "license": "MIT"
+}

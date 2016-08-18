@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+  descartes:
+    build: "."
+    mem_limit: 128m
+    restart: always
+    container_name: descartes
+    image: joel/descartes
+    command: npm run watch
+    volumes:
+      - .:/home/app/descartes
+      - /home/app/descartes/node_modules
+    ports:
+      - 8080
+      - "5858:5858"
+    environment:
+      NODE_ENV: development

@@ -1,0 +1,96 @@
+.page
+    top:0
+    bottom:0
+    left: 0
+    right: 0
+    // margin-top: 80px
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start;
+    align-items: center
+    // overflow-y: auto
+    overflow-x: hidden
+    overflow-y: scroll; /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch;
+
+.page-title
+    font-family: Arial
+    font-weight: bold
+    font-size: 30px
+    text-align: center
+    padding-bottom: 20px
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-left: 5%
+    margin-right: 5%
+    margin-top: 45px
+    @media (min-width: 600px)
+        margin-left: 20%
+        margin-right: 20%
+        margin-top: 75px
+
+.content-item
+    font-family: $title-font
+    font-size: 14px
+    display: flex
+    flex-direction: row
+    justify-content: flex-start;
+    align-items: center
+    text-align: center
+    text-shadow: $md-card-1
+    @media (min-width: 600px)
+        font-size: 35px
+
+label
+    font-family: Arial
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+    align-items: flex-start
+
+
+input
+    font-size: 18px
+    padding: 10px
+
+.demo-image
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white
+    border: 1px solid lightGray
+    border-radius: 3px;
+    margin-top: 50px
+    padding: 20px
+    box-shadow: $md-card-1;
+    @media (min-width: 600px)
+        margin: 20px
+        font-size: 28px
+        margin-top: 80px
+        padding: 40px
+
+.blurb
+    font-family: $title-font
+    font-size: 15px
+    @media (min-width: 600px)
+        margin: 20px
+        font-size: 28px
+
+.demo-image img
+    // margin:10%
+    width: 280px
+    height: 135px
+    box-shadow: $md-card-3;
+    @media (min-width: 600px)
+        width: 850px
+        height: 409.4px
