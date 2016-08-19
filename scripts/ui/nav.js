@@ -1,6 +1,6 @@
 'use strict'
 
-var fastn = require('../fastn')
+const fastn = require('../fastn')
 let modals = require('./modals')
 
 let controls = fastn('div', {class: 'philosophers'},

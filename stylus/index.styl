@@ -1,15 +1,47 @@
-$background = #efefef
+$background = lightGray
+$tooltipText = #262626
+$utility = #F5F5F5
 $default-font = 'Arial'
 
-*{margin:0;padding:0;background:white;}
+*{margin:0;padding:0;}
+
 body
-    overflow:hidden
     font-family: $default-font
+    overflow: hidden
+
+canvas
+    height: 100%
+    width: 100%
 
 input
-    margin: 10px
+    margin-bottom: 5px
+
+input[type='number']
+    padding:5px
+    font-size: 18px
+    // cursor: url('god.png'), default
 
 .container
     border: 3px solid gray
+
+img, canvas, body, button
+	// cursor: url('god.png'), default
+
+form
+    top:0
+    margin: 10px
+
+label, span
+    margin: 5px
+
+
+select
+    border: none
+    background-color: transparent;
+    margin: 5px
+    border-radius: 0px
+    height: 45px
+    box-shadow: $md-card-2
+    font-size: 14px
 
 @import 'mixins/index.styl'
